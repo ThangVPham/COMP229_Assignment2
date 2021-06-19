@@ -77,7 +77,7 @@ function ProcessRegisterPage(req, res, next) {
             return res.redirect('/register');
         }
         return passport_1.default.authenticate('local')(req, res, () => {
-            return res.redirect('/clothing-list');
+            return res.redirect('/contact-list');
         });
     });
 }
