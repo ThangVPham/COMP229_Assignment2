@@ -1,0 +1,17 @@
+{
+    "contact":
+    [
+        {
+            "FullName":"David Cameron",
+            "EmailAddress": "d.cameron@gmail.com",
+            "ContactNumber": "416-825-7346"
+        },
+        {
+            "FullName":"Hugh Jackman",
+            "EmailAddress": "h.jackman@gmail.com",
+            "ContactNumber": "416-872-6945"
+        }
+    ]
+}
+
+
