@@ -36,7 +36,6 @@ let localStrategy = passport_local_1.default.Strategy;
 const user_1 = __importDefault(require("../Models/user"));
 const connect_flash_1 = __importDefault(require("connect-flash"));
 const index_1 = __importDefault(require("../Routes/index"));
-const clothing_1 = __importDefault(require("../Routes/clothing"));
 const contact_1 = __importDefault(require("../Routes/contact"));
 const app = express_1.default();
 exports.default = app;
@@ -69,8 +68,6 @@ app.use(passport_1.default.session());
 passport_1.default.use(user_1.default.createStrategy());
 passport_1.default.serializeUser(user_1.default.serializeUser());
 passport_1.default.deserializeUser(user_1.default.deserializeUser());
-app.use('/', index_1.default);
-app.use('/clothing-list', clothing_1.default);
 app.use('/', index_1.default);
 app.use('/contact-list', contact_1.default);
 app.use(function (req, res, next) {

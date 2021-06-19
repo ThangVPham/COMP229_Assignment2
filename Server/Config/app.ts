@@ -22,7 +22,7 @@ import flash from 'connect-flash';
 
 // attach router files
 import indexRouter from '../Routes/index';
-import clothingRouter from '../Routes/clothing';
+
 import contactRouter from '../Routes/contact';
 
 // Express Web App Configuration
@@ -79,9 +79,7 @@ passport.use(User.createStrategy());
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-// create routing through event handling
-app.use('/', indexRouter);
-app.use('/clothing-list', clothingRouter);
+
 
 //create routing through event handling for contact
 app.use('/', indexRouter);
